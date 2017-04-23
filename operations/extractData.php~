@@ -1,0 +1,22 @@
+<?php
+$xml=simplexml_load_file("alljobs.xml") or die("Error: Cannot create object");
+
+$myfile = fopen("skills.txt", "w") or die("Unable to open file!");
+
+
+
+
+$i=1;
+foreach($xml->children() as $job) { 
+
+
+$skills=str_replace('_', '-',str_replace('\'', '-',trim($job->skills)));
+
+fwrite($myfile, $skills);
+
+}
+
+fclose($myfile);
+
+
+
