@@ -1,6 +1,6 @@
 $(function(){
 	  $.ajax({
-	    url: 'getData.php',
+	    url: 'getExperienceData.php',
 	    type: 'GET',
 	    success : function(data) {
 	    

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 $cluster  = Cassandra::cluster()
                 ->build();
 $keyspace  = 'naukridhanda';
@@ -26,6 +28,10 @@ foreach ($sortArray as $key => $row) {
     $count[$key] = $row['sim'];
 }
 
+if(empty($sortArray))
+{
+    echo "No Recommendation Yet !";
+}
 
 array_multisort($count, SORT_DESC, $cname, SORT_ASC, $sortArray);
 

@@ -15,7 +15,7 @@ $session  = $cluster->connect($keyspace);
  */
 
 
-/*
+
 $input = fopen("company/part-r-00000", "r") or die("Unable to open file!");
 $i=1;
 $query="CREATE TABLE IF NOT EXISTS companycount (id int, cname text, count int,PRIMARY KEY (id));";
@@ -40,7 +40,7 @@ while(!feof($input)) {
 }
 fclose($input);
 
-*/
+
 
 /*
  *
@@ -60,7 +60,7 @@ fclose($input);
  */
 
 
-/*
+
 $input = fopen("skills/part-r-00000", "r") or die("Unable to open file!");
 $i=1;
 $query="CREATE TABLE IF NOT EXISTS skillcount (id int, sname text, count int,PRIMARY KEY (id));";
@@ -85,7 +85,7 @@ while(!feof($input)) {
 	
 }
 fclose($input);
-*/
+
 
 /*
  *
@@ -103,7 +103,7 @@ fclose($input);
  *
  *
  */
-/*
+
 $input = fopen("location/part-r-00000", "r") or die("Unable to open file!");
 $i=1;
 $query="CREATE TABLE IF NOT EXISTS locationcount (id int, lname text, count int,PRIMARY KEY (id));";
@@ -128,7 +128,7 @@ while(!feof($input)) {
 	
 }
 fclose($input);
-*/
+
 
 /*
  *
@@ -146,7 +146,7 @@ fclose($input);
  *
  *
  */
-/*
+
 $input = fopen("salary/part-r-00000", "r") or die("Unable to open file!");
 $i=1;
 $query="CREATE TABLE IF NOT EXISTS salarycount (id int, salary text, count int,PRIMARY KEY (id));";
@@ -171,7 +171,7 @@ while(!feof($input)) {
 	
 }
 fclose($input);
-*/
+
 /*
  *
  * Salary End
@@ -188,7 +188,7 @@ fclose($input);
  *
  *
  */
-/*
+
 $input = fopen("jobtitle/part-r-00000", "r") or die("Unable to open file!");
 $i=1;
 $query="CREATE TABLE IF NOT EXISTS jobtitlecount (id int, jobtitle text, count int,PRIMARY KEY (id));";
@@ -213,7 +213,7 @@ while(!feof($input)) {
 	
 }
 fclose($input);
-*/
+
 
 /*
  *
